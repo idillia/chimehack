@@ -64,7 +64,7 @@ window.$ = window.jQuery = require('jquery');
             ["You are so smart :) Spot on! The answer key says: Madagascar","Madagascar"],
             ["What is the salt concentration of marine habitats?", "1%"],
             ["Nice try! The answer key says: Marine habitats are aquatic habitats with salt concentrations of more than one percent.", "Lake, sea"],
-            ["What are the two main types of freshwater habitat?"],
+            ["What are the two main types of freshwater habitat?", "Ocean"],
             ["Yup, lake is one of them! The answer key says: The two main types of freshwater habitat are rivers and lakes.", "Ocean"],
             ["What is the largest habitat in the world?"],
             ["Woop! Nice! The answer key says: Oceans create the largest habitat in the world."],
