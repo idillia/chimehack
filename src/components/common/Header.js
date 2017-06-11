@@ -27,7 +27,7 @@ const Header = () => {
                 <li><a href="readText">Read Text Page</a></li>
                 <li><a href="helpPage">Help Page</a></li>
                 <li><a href="quizPage">Quiz Page</a></li>
-                <li><a href="/rewords">My rewords</a></li>
+                <li><a href="/rewards">My rewards</a></li>
                 <li><a href="">My settings</a></li>
               </ul>
             </div>  

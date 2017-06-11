@@ -1,4 +1,3 @@
-console.log("hello")
 window.$ = window.jQuery = require('jquery');
 
 
@@ -19,50 +18,81 @@ window.$ = window.jQuery = require('jquery');
         }(this);
         return this;
     };
-    console.log(Message)
     $(function () {
-        var getMessageText, message_side, sendMessage;
+        var getMessageText, message_side, botSendMessage, userSendMessage;
         message_side = 'right';
         getMessageText = function () {
             var $message_input;
             $message_input = $('.message_input');
             return $message_input.val();
         };
-        sendMessage = function (text) {
+        botSendMessage = function (text) {
             var $messages, message;
             if (text.trim() === '') {
                 return;
             }
             $('.message_input').val('');
             $messages = $('.messages');
-            message_side = message_side === 'left' ? 'right' : 'left';
+            // message_side = message_side === 'left' ? 'right' : 'left';
             message = new Message({
                 text: text,
-                message_side: message_side
+                message_side: "left"
             });
             message.draw();
             return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
         };
+
+       
+
+        userSendMessage = function (text) {
+            var $messages, message;
+            if (text.trim() === '') {
+                return;
+            }
+            $('.message_input').val('');
+            $messages = $('.messages');
+            // message_side = message_side === 'left' ? 'right' : 'left';
+            message = new Message({
+                text: text,
+                message_side: "right"
+            });
+            message.draw();
+            return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
+        };
+
+        var a = ["Great!", "b"];
+        var i=-1;
         
         $('.send_message').click(function (e) {
-            return sendMessage(getMessageText());
+            userSendMessage(getMessageText());
+            i++;
+            setTimeout(function () {
+               return botSendMessage(a[i]);
+            }, 1000);
+            
+            if(i == 0){
+                setTimeout(function () {
+                  window.location.replace("http://localhost:3000/readText");
+                }, 1200);
+            }    
         });
         
         $('.message_input').keyup(function (e) {
             if (e.which === 13) {
-                return sendMessage(getMessageText());
+                userSendMessage(getMessageText());
+                i++;
+                return setTimeout(function () {
+                   return botSendMessage(a[i]);
+                }, 1000);
             }
         });
-        // sendMessage('Hello Philip! :)');
-        
+                
         setTimeout(function () {
-            return sendMessage('Hi Aya! How are you?');
-        }, 1000);
+            return botSendMessage('Hi Ayesha! Ready? Let’s start :)');
+        }, 500);
 
-        //Hello TAAI, I'm fine, thank you!
-        
-        return setTimeout(function () {
-            return sendMessage('Are you ready to learn?');
-        }, 5000);
+        setTimeout(function () {
+            return botSendMessage('Ms. Laura went over aquatic biomes today. Would you like to do that?');
+        }, 500);
     });
 }.call(this));
