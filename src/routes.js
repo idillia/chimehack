@@ -6,6 +6,7 @@ import IntroPage from './components/home/IntroPage';
 import ReadTextPage from './components/home/ReadTextPage';
 import QuizPage from './components/home/QuizPage';
 import RewardPage from './components/home/RewardPage';
+import ProgressPage from './components/home/ProgressPage';
 
 export default (
   <Route path="/" component={App}>
@@ -14,5 +15,6 @@ export default (
     <Route path="readText" component={ReadTextPage} />
     <Route path="quizPage" component={QuizPage} />
     <Route path="rewards" component={RewardPage} />
+    <Route path="progress" component={ProgressPage} />
   </Route>  
 );
