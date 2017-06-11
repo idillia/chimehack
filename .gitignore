@@ -1,0 +1,6 @@
+node_modules
+terminal.glue
+dist
+src/.DS_Store
+src/images/.DS_Store
+.DS_Store

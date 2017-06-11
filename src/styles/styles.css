@@ -1,0 +1,216 @@
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+/* vertical-centered text */
+
+#home .tb {
+  position: relative;
+  z-index:999;
+}
+.tb {
+  display:table;
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.tb-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* additional sections */
+
+#home {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+#home:before {
+  content: ' ';
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  opacity: 1;
+  background: url('./../images/worldmap.png') no-repeat center center fixed; 
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+ /*Header Social Icons*/
+
+.header-social {
+  margin-top:40px;
+}
+
+.header-social ul {
+  margin:0px;
+  padding:0px;
+}
+
+.header-social ul li {
+  display:inline-block;
+  list-style:none;
+  line-height: 48px;
+  margin-right:10px;
+  margin-bottom:10px;
+}
+
+.header-social ul li a {
+  width:50px;
+  height:50px;
+  font-size:30px;
+  border:1px solid black;
+  text-align:center;
+  display:inline-block;
+  color:black;
+}
+
+.header-social ul li a {
+  transition: all 700ms;
+}
+
+.header-social ul li a:hover {
+  background: black;
+  color: #fff;
+}
+
+.header-social ul li a:last-child {
+  margin-right:0px;
+}
+
+#solution {
+  background-color: #306d9f;
+  color: #ffffff;
+}
+#solution .glyphicon {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+#soluton a {
+  color: white;
+  text-decoration: underline;
+} 
+
+#ideas {
+  background: url('./../images/lamp.jpg') no-repeat center center fixed;
+  display: table;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+#ideas .panel {
+  opacity: 0.85;
+}
+
+#ideas > div > h2 {
+    color: white;
+
+}
+
+.positioning{
+  position: absolute;
+  top: 88px;
+  left: 30px;
+}
+
+#mindmap {
+/*  background: url('./../images/dreams.jpg') no-repeat center center fixed;
+*/
+
+  background-size: cover;
+  color: #ffffff;
+  background-color: #e7e7e7;
+  height:100vh;
+}
+
+#mindmap .panel {
+  opacity: 0.85;
+}
+
+
+footer {
+  padding: 20px 0;
+  height: 1em;
+  background-color: lightgray;
+}
+
+.no-margin{
+   margin-top:0;
+   margin-bottom:0;
+}
+/*footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}*/
+/*footer .glyphicon:hover {
+  color: #306d9f;
+}*/
+
+.iphone-sim {
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.iphone-sim img {
+  max-width: 100%;
+}
+
+.img-container {
+  display: inline-block;
+  position: relative;
+}
+
+.icon-float-right {
+  float:right;
+}
+.icon-float-left {
+  float:left;
+  padding-right:1em;
+}
+.panel-default {
+  margin-top: -1px !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.color-white {
+  color: white;
+} 
+
+#tutor {
+  
+}
+
