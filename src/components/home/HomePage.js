@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 import Radium from 'radium';
-import Test from './test.js';
+import introBot from './introBot.js';
 
 import mediaQueries from '../common/mediaQueries.js';
 
@@ -40,37 +40,11 @@ class HomePage extends React.Component {
         <div id="home" style={styles[mediaQueries.breakpointSmall].home}>
           <div className="tb">
             <div className="tb-cell">
-              <div className="text-vcenter">
+              <div className="text-vcenter"><Link to="/intro"> <h1>Learn With AI</h1></Link>
               </div>
             </div>
           </div>
         </div>
-
-        <div id="solution" className="pad-section">
-          <div className="container">
-            <h2 className="text-center">Our solution</h2> <hr/>
-            <div className="row text-center">
-              We use awesome machine learning
-            </div>
-          </div>
-        </div>
-
-        <div id="ideas" className="pad-section">
-          <div className="container">
-            <h2 className="text-center">Our ideas even better</h2> <hr/>
-            <div className="row text-center">
-              We use awesome AI
-            </div>
-          </div>
-        </div>
-
-  
-        <footer>
-          <div className="container">
-            <p className="text-right no-margin">Copyright &copy; Teachers Without Borders 2017</p>
-          </div>
-        </footer>
-
       </div>  
     );
   }

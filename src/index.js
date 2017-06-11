@@ -5,8 +5,10 @@ import {render} from 'react-dom';
 import {Router, browserHistory} from 'react-router';
 import {Provider} from 'react-redux';
 import routes from './routes';
-import test from './components/home/test';
+import introBot from './components/home/introBot';
+import quizBot from './components/home/quizBot';
 import './styles/styles.css';
+import './styles/styles1.css';
 
 
 

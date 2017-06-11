@@ -1,7 +1,7 @@
 {
-  "name": "milapg",
+  "name": "chime",
   "version": "1.0.0",
-  "description": "Personal site",
+  "description": "chime",
   "scripts": {
     "dev": "npm-run-all --parallel open:src",
     "pro": "npm run prebuild build",

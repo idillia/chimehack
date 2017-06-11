@@ -21,20 +21,20 @@ const Header = () => {
             </div>
             <div id="navbar" className="navbar-collapse collapse" style={{"height": "0px"}}>
               <ul className="nav navbar-nav navbar-right">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#solution">WHAT WE SOLVE</a></li>
-                <li><a href="/learn">LEARN</a></li>
+                <li><a href="intro">Intro</a></li>
+                <li><a href="/curriculum">Curriculum</a></li>
+                <li><a href="/progress">My progress</a></li>
+                <li><a href="readText">Read Text Page</a></li>
+                <li><a href="helpPage">Help Page</a></li>
+                <li><a href="quizPage">Quiz Page</a></li>
+                <li><a href="/rewords">My rewords</a></li>
+                <li><a href="">My settings</a></li>
               </ul>
             </div>  
           </div>  
         </nav>
-
   );
 } ;
 
 
 export default Header;
-
-// <li><a href="#ideas">IDEAS</a></li>
-
-// <li><a href="#mindmap">MIND MAP</a></li>

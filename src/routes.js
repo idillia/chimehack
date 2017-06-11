@@ -2,11 +2,15 @@ import React from 'react';
 import {Route, IndexRoute} from 'react-router';
 import App from './components/App';
 import HomePage from './components/home/HomePage';
-import PersonalTutorPage from './components/home/PersonalTutorPage';
+import IntroPage from './components/home/IntroPage';
+import ReadTextPage from './components/home/ReadTextPage';
+import QuizPage from './components/home/QuizPage';
 
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={HomePage} />
-    <Route path="learn" component={PersonalTutorPage} />
+    <Route path="intro" component={IntroPage} />
+    <Route path="readText" component={ReadTextPage} />
+    <Route path="quizPage" component={QuizPage} />
   </Route>  
 );
