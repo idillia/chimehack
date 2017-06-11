@@ -60,7 +60,7 @@ window.$ = window.jQuery = require('jquery');
             return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
         };
 
-        var a = ["Great!", "b"];
+        var a = ["Great!"];
         var i=-1;
         
         $('.send_message').click(function (e) {
@@ -77,15 +77,21 @@ window.$ = window.jQuery = require('jquery');
             }    
         });
         
-        $('.message_input').keyup(function (e) {
-            if (e.which === 13) {
-                userSendMessage(getMessageText());
-                i++;
-                return setTimeout(function () {
-                   return botSendMessage(a[i]);
-                }, 1000);
-            }
-        });
+        // $('.message_input').keyup(function (e) {
+        //     if (e.which === 13) {
+        //     userSendMessage(getMessageText());
+        //     i++;
+        //     setTimeout(function () {
+        //         return botSendMessage(a[i]);
+        //     }, 1000);
+             
+        //      if(i == 0){
+        //          setTimeout(function () {
+        //            window.location.replace("http://localhost:3000/readText");
+        //          }, 1200);
+        //      } 
+        //     }
+        // });
                 
         setTimeout(function () {
             return botSendMessage('Hi Ayesha! Ready? Let’s start :)');
