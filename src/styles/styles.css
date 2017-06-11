@@ -422,7 +422,7 @@ body {
   position: absolute;
   width: calc(100% - 20px);
   max-width: 800px;
-  height: 500px;
+  height: 100%;
   border-radius: 10px;
   background-color: #fff;
   left: 50%;
@@ -436,7 +436,7 @@ body {
 .top_menu {
   background-color: #fff;
   width: 100%;
-  padding: 20px 0 15px;
+  padding: 7px 0 15px;
   box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
 }
 .top_menu .buttons {
@@ -471,7 +471,7 @@ body {
   list-style: none;
   padding: 20px 10px 0 10px;
   margin: 0;
-  height: 347px;
+  height: 475px;
   overflow: scroll;
 }
 .messages .message {
@@ -482,32 +482,33 @@ body {
   opacity: 0;
 }
 .messages .message.left .avatar {
-  background-color: #f5886e;
+ background-image: url("/../images/dora.png");
+
   float: left;
 }
 .messages .message.left .text_wrapper {
-  background-color: #ffe6cb;
+  background-color: #e67e22;
   margin-left: 20px;
 }
 .messages .message.left .text_wrapper::after, .messages .message.left .text_wrapper::before {
   right: 100%;
-  border-right-color: #ffe6cb;
+  border-right-color: #e67e22;
 }
 .messages .message.left .text {
-  color: #c48843;
+  color: #ecf0f1;
 }
 .messages .message.right .avatar {
-  background-color: #fdbf68;
+  display: none;
   float: right;
 }
 .messages .message.right .text_wrapper {
-  background-color: #c7eafc;
+  background-color: #3498db;
   margin-right: 20px;
   float: right;
 }
 .messages .message.right .text_wrapper::after, .messages .message.right .text_wrapper::before {
   left: 100%;
-  border-left-color: #c7eafc;
+  border-left-color: #3498db;
 }
 .messages .message.right .text {
   color: #45829b;
@@ -547,6 +548,7 @@ body {
   margin-top: -2px;
 }
 .messages .message .text_wrapper .text {
+  color:#ecf0f1;
   font-size: 18px;
   font-weight: 300;
 }
@@ -582,8 +584,8 @@ body {
   height: 50px;
   display: inline-block;
   border-radius: 50px;
-  background-color: #a3d063;
-  border: 2px solid #a3d063;
+  background-color: #2ecc71;
+  border: 2px solid #2ecc71;
   color: #fff;
   cursor: pointer;
   transition: all 0.2s linear;

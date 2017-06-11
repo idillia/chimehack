@@ -42,7 +42,9 @@ class QuizPage extends React.Component {
         <div className="icon"></div><div className="text1">Send</div></div></div></div>
         <div className="message_template1">
         <li className="message1">
-        <div className="avatar"></div>
+        <div className="avatar">
+         <img src={require("./../../images/dora.png")}  className="icon1" width="60" height="60"></img>
+        </div>
         <div className="text_wrapper">
         <div className="text1"></div></div></li></div>
       </div>  

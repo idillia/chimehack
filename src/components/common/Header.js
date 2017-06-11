@@ -17,7 +17,7 @@ const Header = () => {
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-              <a className="navbar-brand" href="#">Teachers Without Borders</a>
+              <a className="navbar-brand" href="#">TA-AI</a>
             </div>
             <div id="navbar" className="navbar-collapse collapse" style={{"height": "0px"}}>
               <ul className="nav navbar-nav navbar-right">

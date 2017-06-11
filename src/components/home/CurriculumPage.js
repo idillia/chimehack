@@ -5,7 +5,7 @@ import quizBot from './quizBot.js';
 import mediaQueries from '../common/mediaQueries.js';
 
 
-class RewardPage extends React.Component {
+class CurriculumPage extends React.Component {
        
   render() {
     return (
@@ -41,6 +41,4 @@ class RewardPage extends React.Component {
   }
 }
 
-export default RewardPage;
-
-
+export default CurriculumPage;
